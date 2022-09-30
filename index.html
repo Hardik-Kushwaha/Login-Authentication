@@ -1,46 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- icon  -->
+    <script
+      src="https://kit.fontawesome.com/d76777f5dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div id="main">
-
-        <div id="login">
-            <img src="/admin.png" alt="">
-            <a href="#">Login to Countinue</a>
-            <div id="usern">
-                <input class="name" type="text" placeholder="Enter Username" required>
-                <div class="uimg">
-                    <a href="#"><i class="ri-admin-fill"></i></a>
-                </div>
+      <section class="login-page">
+        <div class="loginpage-center">
+          <!-- login header  -->
+          <div id="login-header">
+            <h1>Login</h1>
+          </div>
+          <!-- end of login header  -->
+          <!-- forms center-->
+          <div class="form-center">
+            <!-- username  -->
+            <div class="username">
+              <form action="/php">
+                <input type="text" id="username" placeholder="username" />
+              </form>
             </div>
-            <div id="userp">
-                <input class="name" type="password" placeholder="Enter Password" required>
-                <div class="uimg">
-                    <a href="#"><i class="ri-lock-fill"></i></a>
-                </div>
+            <!-- end of username  -->
+            <!-- username  -->
+            <div class="password">
+              <form action="/php">
+                <input type="text" id="username" placeholder="password" />
+              </form>
             </div>
-            <a href="https://www.google.com/" id="abc">Forget Password ?</a>
+            <!-- end of username  -->
+          </div>
+          <!-- end of form-center  -->
 
-            <button id="lgn">
-                Login
-            </button>
+          <!-- forgot password -->
+          <div class="forgot-password">
+            <!-- remember-me  -->
+            <div class="remember-me">
+              <i class="fas fa-square-check check"></i>
+              <p>Remember me</p>
+            </div>
+            <!-- end of remember-me -->
+            <!-- forgot-pass  -->
+            <div class="forgot-pass">
+              <p>
+                Forgot <span class="pass"><a href="#"> password</a></span>
+              </p>
+            </div>
+            <!--end of forgot-pass  -->
+          </div>
+          <!--end of forgot password -->
 
-            <button id="sgn">Sign Up</button>
+          <!-- btns  -->
+          <div class="btns">
+            <!-- login btn  -->
+            <div class="login-btn">
+              <button class="btn">Login</button>
+              <button class="btn">Sign up</button>
+            </div>
+            <!-- end of login btn  -->
+          </div>
+          <!-- end of btns -->
 
+          <!-- other options  -->
+          <div class="options">
+            <!-- option -text  -->
+            <div class="option-text">
+              <div class="underline"></div>
+              <p>or sign up with</p>
+              <div class="underline"></div>
+            </div>
+            <!-- end of option -text  -->
+          </div>
+          <!-- option icon -->
+          <div class="option-icons">
+            <!-- facebook-icon  -->
+            <div class="facebook-icon">
+              <i class="fab fa-facebook icon"></i>
+            </div>
+            <!-- twitter-icon  -->
+            <div class="twitter-icon">
+              <i class="fab fa-twitter icon"></i>
+            </div>
+            <!-- instagram-icon  -->
+            <div class="instagram-icon">
+              <i class="fab fa-google icon"></i>
+            </div>
+          </div>
+          <!--end of option icon -->
+          <!--end of other options  -->
         </div>
-       
+      </section>
     </div>
-</body>
-
+  </body>
 </html>
